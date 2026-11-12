@@ -372,7 +372,8 @@ select,.filter-label select{appearance:none;-webkit-appearance:none;background-i
 .dashboard-form input:focus,.dashboard-form textarea:focus,.dialog-card input:focus,.dialog-card select:focus,.dialog-card textarea:focus,
 .appointment-form input:focus,.appointment-form select:focus,.appointment-form textarea:focus,.admin-login-form input:focus{outline:none;border-color:var(--gold-deep);box-shadow:0 0 0 3px rgba(196,160,90,.28)}
 .form-card input:user-invalid,.form-card select:user-invalid,.form-card textarea:user-invalid{border-color:var(--bad);box-shadow:0 0 0 3px rgba(138,59,50,.12)}
-.field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px;align-items:end}
+.field-row>label{min-width:0}
 .char-count{display:block;text-align:right;color:var(--subtle);font:400 13px var(--sans)!important;margin-top:6px}
 .form-card .form-submit{display:flex;width:auto;margin-top:8px}.dashboard-form .form-submit{width:100%}
 .privacy-note{font-size:13px;color:var(--subtle);text-align:center;margin-top:14px}
@@ -593,6 +594,8 @@ select,.filter-label select{appearance:none;-webkit-appearance:none;background-i
   .form-card>*:not(.form-header){margin-left:20px;margin-right:20px}
   .form-header{padding:22px 20px}
   .field-row{gap:0}
+  .form-card .form-submit,.dialog-actions .button{width:100%;justify-content:center}
+  .dialog-actions{flex-direction:column-reverse}
   .choice-card{padding:20px}
   .dash-shell{width:calc(100% - 32px);padding:24px 0 72px}
   .dialog-card{padding:22px 18px}
