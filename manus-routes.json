@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "title": "EMDI Travel & Passport Connect"
+    },
+    {
+      "path": "/services.html",
+      "title": "Services"
+    },
+    {
+      "path": "/about.html",
+      "title": "About"
+    },
+    {
+      "path": "/providers.html",
+      "title": "Providers"
+    },
+    {
+      "path": "/register.html",
+      "title": "Register"
+    },
+    {
+      "path": "/management.html",
+      "title": "Provider Management"
+    }
+  ]
+}
