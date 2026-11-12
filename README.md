@@ -8,7 +8,7 @@ A responsive multi-page prototype for EMDI Digital Technologies in Papua New Gui
 - `services.html` — Services: the existing service cards and how-it-works content, moved without redesign.
 - `about.html` — About: the existing audience, about, benefits and contact content, moved without redesign.
 - `providers.html` — Providers: service categories, advanced search, location filters, approved provider directory and provider profile detail modal.
-- `register.html` — Register: citizen early registration and business provider application forms.
+- `register.html` — Register: business provider application form (travellers browse without an account).
 - `management.html` — Provider Management: provider dashboard and protected admin registration management.
 
 All pages reuse the same navigation, footer, assets, `styles.css` and `script.js`.
@@ -42,7 +42,6 @@ Then visit `http://localhost:8000/`.
 
 This redesign is connected to the active **EMDI Travel Connect** Supabase project. The browser uses only the publishable key in `supabase-config.js`; no service-role key is included.
 
-- Citizen registrations write to `public.citizen_registrations`.
 - Business applications write to `public.business_applications`.
 - Approved public listings read from `public.published_provider_directory`.
 - Appointment requests write to `public.appointment_requests`.
@@ -58,9 +57,9 @@ No payment gateway, passport application processing, faster-approval promise or 
 ## Design refresh (v3)
 
 - `styles.css` rewritten as a single design system (charcoal / ivory / gold, Manrope + DM Sans, consistent radii, shadows, buttons, inline SVG icons).
-- Homepage: new hero, quick-find category bar, service cards, how-it-works, citizen/provider panels, trust section, founding-provider benefits, multi-column footer.
+- Homepage: new hero, quick-find category bar, service cards, how-it-works, provider panel, trust section, founding-provider benefits, multi-column footer.
 - Providers: search/filter toolbar, region chips, richer provider cards, redesigned profile dialog with appointment request.
-- Register: citizen / business choice cards, clearer forms and success/error states.
+- Register: clearer provider form and success/error states.
 - Management: sidebar dashboard layout, stat cards, table-style registration lists.
 - Fixes: added the missing admin "Edit provider" dialog markup to `management.html`; homepage category links now open `providers.html?category=...` (the directory reads `category`, `location` and `q` query parameters).
 - Placeholder email/WhatsApp in the contact section and footer still need real details before launch.
