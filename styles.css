@@ -615,3 +615,12 @@ select,.filter-label select{appearance:none;-webkit-appearance:none;background-i
 .quick-card>.quick-tile:nth-child(n+6),.category-strip>.category-tile:nth-child(n+5){grid-column:span 4}
 @media(max-width:1100px){.quick-card>.quick-tile,.quick-card>.quick-tile:nth-child(n+6),.category-strip>.category-tile,.category-strip>.category-tile:nth-child(n+5){grid-column:span 6}}
 @media(max-width:520px){.quick-card>.quick-tile,.quick-card>.quick-tile:nth-child(n+6),.category-strip>.category-tile,.category-strip>.category-tile:nth-child(n+5){grid-column:1/-1}}
+
+/* Plans: featured placement, gallery, admin notes */
+.field-row.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:760px){.field-row.three{grid-template-columns:1fr}}
+.featured-badge{display:inline-block;margin-left:8px;padding:2px 9px;border-radius:99px;background:var(--gold-wash);border:1px solid #e5d6aa;color:var(--gold-deep);font:700 11px var(--display);letter-spacing:.08em;text-transform:uppercase;vertical-align:middle}
+.public-provider-card.is-featured{border-color:var(--gold);box-shadow:0 0 0 2px rgba(196,160,90,.28),var(--shadow-sm)}
+.provider-gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;margin:16px 0}
+.provider-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r-sm);border:1px solid var(--line)}
+.admin-rule-note{font-size:14px;color:var(--muted);margin:0 0 14px;max-width:75ch}
