@@ -624,3 +624,19 @@ select,.filter-label select{appearance:none;-webkit-appearance:none;background-i
 .provider-gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;margin:16px 0}
 .provider-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r-sm);border:1px solid var(--line)}
 .admin-rule-note{font-size:14px;color:var(--muted);margin:0 0 14px;max-width:75ch}
+
+/* Subcategories, details, promotions, provider sign-in */
+.check-group{border:0;margin:0 0 18px;padding:0;min-width:0}
+.check-group legend{font:700 13.5px var(--display);color:var(--ink);padding:0;margin-bottom:8px}
+.check-group legend small{font:400 13px var(--sans);color:var(--subtle)}
+.check-options{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:2px 12px;padding:12px 14px;border:1px solid var(--line-2);border-radius:var(--r-sm);background:#fff;max-height:170px;overflow:auto}
+.form-card .check-options label{display:flex;align-items:center;gap:8px;font:500 14px/1.35 var(--sans);margin:0;padding:3px 0;cursor:pointer}
+.form-card .check-options input{width:auto;min-height:0;margin:0;accent-color:var(--gold-deep)}
+.check-empty{font-size:14px;color:var(--subtle)}
+.form-card input:disabled,.form-card textarea:disabled{background:var(--ivory-2);cursor:not-allowed}
+.promo-highlight{margin:10px 0 0;padding:8px 12px;border-radius:var(--r-sm);background:var(--gold-wash);border:1px solid #e5d6aa;color:var(--gold-deep);font:600 14px/1.4 var(--display)}
+.provider-detailed{margin:16px 0}.provider-detailed h3{font-size:15px;margin-bottom:6px}.provider-detailed p{margin:0;color:var(--muted);font-size:15px;line-height:1.65;white-space:pre-line}
+.provider-signin{padding:20px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--ivory);margin-bottom:22px}
+.provider-signin .tool-description{margin:0 0 14px}
+.signin-actions{display:flex;gap:10px;flex-wrap:wrap}
+@media(max-width:760px){.signin-actions .button{flex:1}}
